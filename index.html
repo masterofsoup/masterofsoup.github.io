@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>SOFT | desumidnight</title>
+<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="css/animate.css">
+<link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+<link rel="stylesheet" type="text/css" href="css/magnific-popup.css">
+<link rel="stylesheet" type="text/css" href="css/jquery.mCustomScrollbar.min.css">
+<link rel="shortcut icon" type="image/x-icon" href="images/fav.ico">
+<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link rel="stylesheet" type="text/css" href="css/structure.css">
+<link rel="stylesheet" type="text/css" href="css/main-style.css">
+<link rel="stylesheet" type="text/css" href="css/star-animation.css">
+<link rel="stylesheet" type="text/css" href="css/responsive.css">
+<link href='css/fonts.css' rel='stylesheet' type='text/css'>
+<style>body{cursor:default;-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;}.li-line-height{line-height:0.6!important;}.custom-a{color:rgba(255,255,255,0.6);-webkit-transition:border-bottom 0.1s ease-in-out,width 0.1s ease-in-out;-moz-transition:border-bottom 0.1s ease-in-out,width 0.1s ease-in-out;-ms-transition:border-bottom 0.1s ease-in-out,width 0.1s ease-in-out;-o-transition:border-bottom 0.1s ease-in-out,width 0.1s ease-in-out;transition:border-bottom 0.1s ease-in-out,width 0.1s ease-in-out;}.custom-a:hover{color:rgba(255,255,255,0.75);border-bottom:3px solid rgba(255,255,255,0.5);opacity:.75;}.custom-b:hover{border-bottom:1px solid rgba(255,255,255,0.5)!important;}.custom-a:focus{color:rgba(255,255,255,0.75);border:none!important;border-bottom:3px solid rgba(255,255,255,0.5)!important;opacity:.75;outline:0!important;}</style>
+</head>
+<body class="single-image">
+<div class="page-loader-wrapper">
+<div class="loader"></div>
+</div>
+<audio id="bg_music" autoplay="" loop="true" autobuffer="autobuffer" hidden="true">
+<script>
+              var backgroundAudio = document.getElementById("bg_music");
+              backgroundAudio.volume = 0.2;
+          </script>
+<source type="audio/mpeg" src="files/background.mp3">
+</audio>
+<div id="main-wrapper">
+<main id="main" class="background" data-image="images/background.jpg">
+<div class="bg-animation">
+<div id='stars'></div>
+<div id='stars2'></div>
+<div id='stars3'></div>
+<div id='stars4'></div>
+</div>
+<div class="overlay" style="background-color: rgba(0,0,0,0.3)"></div>
+<div class="nc-content-section index nc-active vhm">
+<div id="home-page" class="page-wrapper vhm-item active-home anim s01">
+<div class="inner-wrp vhm">
+<div class="container vhm-item">
+<div class="tagline ac anim fadeInUp s01 delay-0-6s">
+<img src="images/logo.png"/>
+<br/><br/><br/>
+<span class="hr-line"></span>
+<p class="anim fadeInUp s01 delay-0-7s">
+<ul style="center" id="shouts">
+<li><p class="anim fadeInUp s01 delay-0-7s"><a href="https://vk.com/mastterofsoup" target="_blank">VK Page</a></p></li>
+<li><p class="anim fadeInUp s01 delay-0-7s"><a href="http://steamcommunity.com/id/finlde" target="_blank">Steam Profile</a></p></li>
+<li><p class="anim fadeInUp s01 delay-0-7s"><a href="https://steamdb.info/calculator/76561198117907871/?cc=us" target="_blank">Steam Stats</a></p></li>
+<li><p class="anim fadeInUp s01 delay-0-7s"><a href="https://csgo-stats.com/search/finlde" target="_blank">CSGO Stats</a></p></li>
+<li><p class="anim fadeInUp s01 delay-0-7s"><a href="https://www.youtube.com/user/08Danila" target="_blank">YouTube</a></p></li>
+</ul>
+</p>
+</div>
+<div class="copyrights ac anim fadeInUp s01 delay-1s">
+<a href="index.html#" class="custom-a custom-b">SOFT</a> | DESUMIDNIGHT</span>
+<br><br>
+by desu
+</div>
+</div>
+</div>
+</div>
+<div id="ajax-page" class="page-wrapper vhm-item">
+</div>
+</div>
+<div class="nc-overlay"></div>
+</main>
+</div>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/classie.js"></script>
+<script src="js/dialogFx.js"></script>
+<script src="js/common.js"></script>
+<script>
+         window.onload = function() {
+             var shouts = $($.find("#shouts")[0]).children();
+             var elements = shouts.find("p");
+             $.each(elements, function(k, v) {
+                $(v).addClass("li-line-height");
+                var anchor = $($(v).find("a")[0]).addClass("custom-a");
+             });
+         }
+      </script>
+</body>
+</html>
